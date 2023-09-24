@@ -10,13 +10,13 @@ The Terraform file creates an Azure Linux Web App with a specified Java stack. I
 The folder contains java application build using maven.
 To learn more about Maven archetype https://maven.apache.org/archetypes/maven-archetype-webapp/index.html
 
-### `Description ✋:`
+### Description ✋:
 We generated a Maven project based on a specific archetype. 
 Maven will generate a new directory structure and populate it with the necessary files and configurations for a basic web application project. This includes a src directory for your source code and a webapp directory for web resources like HTML, CSS, and JavaScript. It will also create a pom.xml file that defines the project's dependencies and build settings.
 
-### `Steps to replicate the github repository ✋:`
+### Steps to replicate the github repository ✋:
 - Generated this application by running command:
-mvn archetype:generate "-DgroupId=example.demo" "-DartifactId=helloworld" "-DarchetypeArtifactId=maven-archetype-webapp" "-DarchetypeVersion=1.4" "-Dversion=1.0-SNAPSHOT"
+`mvn archetype:generate "-DgroupId=example.demo" "-DartifactId=helloworld" "-DarchetypeArtifactId=maven-archetype-webapp" "-DarchetypeVersion=1.4" "-Dversion=1.0-SNAPSHOT"`
 
 > -DgroupId=example.demo: This sets the Maven Group ID for your project. The Group ID is typically used to identify the organization or group responsible for the project. In this case, it's set to example.demo.
 
@@ -30,24 +30,23 @@ mvn archetype:generate "-DgroupId=example.demo" "-DartifactId=helloworld" "-Darc
 
 Maven will generate a helloworld directory structure and populated it with the necessary files and configurations for a basic web application project. Let's get inside the directory next.
 
-- cd helloworld
-
-The directory will contain a pom.xml and src directory.
+- The directory will contain a pom.xml and src directory.
+`cd helloworld`
 
 - Package the application by:
-mvn com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config
+`mvn com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config`
 
 
 ### `Downloading the file ✋:`
 
 - Downloading from github
-git clone  
+`git clone`  
 - A directory called helloworld will be created
-cd helloworld
+`cd helloworld`
 
 
 ### `Deploying on Azure Web App ✋:`
-- mvn package azure-webapp:deploy
+`mvn package azure-webapp:deploy`
 
 Our terminal will ask us which Web App we want to deploy the maven application to. Select the one that you created using azurewebapp.tf
 
