@@ -12,3 +12,10 @@ variable "web_app_name" {
   description = "Name of the Azure Linux web app"
   type        = string
 }
+
+variable "custom_tags" {
+  type    = map(string)
+  default = {
+    owner = "Abhi Bajaj"
+  }
+}

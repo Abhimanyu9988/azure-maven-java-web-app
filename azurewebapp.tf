@@ -39,9 +39,7 @@ resource "azurerm_linux_web_app" "linux_webapp" {
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id = azurerm_service_plan.asp.id
   public_network_access_enabled = true
-  tags = {
-    owner = "Abhi Bajaj"
-  }
+  tags = var.custom_tags
 
   site_config {
     application_stack {
