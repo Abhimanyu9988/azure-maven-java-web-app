@@ -14,7 +14,7 @@ To learn more about Maven archetype https://maven.apache.org/archetypes/maven-ar
 We generated a Maven project based on a specific archetype. 
 Maven will generate a new directory structure and populate it with the necessary files and configurations for a basic web application project. This includes a src directory for your source code and a webapp directory for web resources like HTML, CSS, and JavaScript. It will also create a pom.xml file that defines the project's dependencies and build settings.
 
-- ![#1589F0](https://www.iconsdb.com/icons/download/color/1589F0/circle-16.png) `Steps to make the content of this github repository ✋:`
+![#1589F0](https://www.iconsdb.com/icons/download/color/1589F0/circle-16.png) `Steps to make the content of this github repository ✋:`
 1. Generated this application by running command:
 mvn archetype:generate "-DgroupId=example.demo" "-DartifactId=helloworld" "-DarchetypeArtifactId=maven-archetype-webapp" "-DarchetypeVersion=1.4" "-Dversion=1.0-SNAPSHOT"
 
