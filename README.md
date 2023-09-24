@@ -10,9 +10,21 @@ The Terraform file creates an Azure Linux Web App with a specified Java stack. I
 The folder contains java application build using maven.
 To learn more about Maven archetype https://maven.apache.org/archetypes/maven-archetype-webapp/index.html
 
+#### [`deploytf.sh`](https://github.com/Abhimanyu9988/azure-maven-java-web-app/blob/main/deploytf.sh)
+The file will be responsible to deploy Infrastructure on Azure
+
+#### [`deployapp.sh`](https://github.com/Abhimanyu9988/azure-maven-java-web-app/blob/main/deployapp.sh)
+The file will be responsible to deploy maven application
+
 ### Description ✋:
 We generated a Maven project based on a specific archetype. 
 Maven will generate a new directory structure and populate it with the necessary files and configurations for a basic web application project. This includes a src directory for your source code and a webapp directory for web resources like HTML, CSS, and JavaScript. It will also create a pom.xml file that defines the project's dependencies and build settings.
+
+### Deployment ✋:
+- `git clone https://github.com/Abhimanyu9988/azure-maven-java-web-app.git`
+- `./deploytf.sh`
+- `./deployapp.sh`
+
 
 ### Steps to replicate the github repository ✋:
 - Generated this application by running command:
