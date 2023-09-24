@@ -26,7 +26,7 @@ Maven will generate a new directory structure and populate it with the necessary
 - `./deployapp.sh`
 
 
-### Steps to replicate the github repository ✋:
+### Creating the application ✋:
 - Generated this application by running command:
 `mvn archetype:generate "-DgroupId=example.demo" "-DartifactId=helloworld" "-DarchetypeArtifactId=maven-archetype-webapp" "-DarchetypeVersion=1.4" "-Dversion=1.0-SNAPSHOT"`
 
@@ -51,19 +51,10 @@ Maven will generate a helloworld directory structure and populated it with the n
 `mvn com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config`
 
 
-### Downloading the file ✋:
-
-- Downloading from github
-
-`git clone`  
-- A directory called helloworld will be created
-
-`cd helloworld`
-
 
 ### Deploying on Azure Web App ✋:
 
 `mvn package azure-webapp:deploy`
 
-Our terminal will ask us which Web App we want to deploy the maven application to. Select the one that you created using azurewebapp.tf
+Your terminal will ask us which Web App we want to deploy the maven application to. Select the one that you created using azurewebapp.tf
 
