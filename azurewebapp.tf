@@ -16,7 +16,7 @@ provider "azurerm" {
 
 ####Create a resource group
 resource "azurerm_resource_group" "rg" {
-  name     = "abhi-arg-tf"
+  name     = var.resource_group_name
   location = "East US"
 }
 
@@ -24,7 +24,7 @@ resource "azurerm_resource_group" "rg" {
 ####Create a service plan. 
 ####asp => azurerm_service_plan 
 resource "azurerm_service_plan" "asp" {
-  name                = "abhi-asp-tf"
+  name                = var.service_plan_name
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Linux"
@@ -34,7 +34,7 @@ resource "azurerm_service_plan" "asp" {
 ####Create a web app
 ####alwebapp=azurerm_linux_web_app
 resource "azurerm_linux_web_app" "linux_webapp" {
-  name                = "abhi-java-webapp-tf"
+  name                = var.web_app_name
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id = azurerm_service_plan.asp.id
