@@ -2,11 +2,11 @@
 
 ### The repository containes
 
-#### `azurewebapp.tf`
+#### [`azurewebapp.tf`](https://github.com/Abhimanyu9988/azure-maven-java-web-app/blob/main/azurewebapp.tf)
 The Terraform file creates an Azure Linux Web App with a specified Java stack. It creates a resource group, service plan, and web app. The resource group and service plan are used to configure the web app. 
 
 
-#### `helloworld folder`
+#### [`helloworld folder`](https://github.com/Abhimanyu9988/azure-maven-java-web-app/tree/main/helloworld)
 The folder contains java application build using maven.
 To learn more about Maven archetype https://maven.apache.org/archetypes/maven-archetype-webapp/index.html
 
