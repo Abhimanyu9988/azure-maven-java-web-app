@@ -31,21 +31,26 @@ Maven will generate a new directory structure and populate it with the necessary
 Maven will generate a helloworld directory structure and populated it with the necessary files and configurations for a basic web application project. Let's get inside the directory next.
 
 - The directory will contain a pom.xml and src directory.
+
 `cd helloworld`
 
 - Package the application by:
+
 `mvn com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config`
 
 
-### `Downloading the file ✋:`
+### Downloading the file ✋:
 
 - Downloading from github
+
 `git clone`  
 - A directory called helloworld will be created
+
 `cd helloworld`
 
 
-### `Deploying on Azure Web App ✋:`
+### Deploying on Azure Web App ✋:
+
 `mvn package azure-webapp:deploy`
 
 Our terminal will ask us which Web App we want to deploy the maven application to. Select the one that you created using azurewebapp.tf
