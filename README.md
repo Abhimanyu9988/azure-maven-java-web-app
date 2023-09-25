@@ -46,7 +46,6 @@ Maven will generate a helloworld directory structure and populated it with the n
 `mvn com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config`
 
 
-
 ### Deploying on Azure Web App ✋:
 
 `mvn package azure-webapp:deploy`
